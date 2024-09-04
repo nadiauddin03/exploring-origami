@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html> <!--essentially this means to add other attributes to make the page interactive like adding listeners to buttons, and use DOM parts-->
+<head> <!--adding the header to Exploring Origami in teh web browser tag-->
+    <title>Exploring Origami: Nadia Uddin</title>
+    <link rel="icon" href="./origami photos/favicon.png" sizes="16x16">
+</head>
+<link rel="stylesheet" href="design.css">
+<div class="body"><!--create the homepage section-->
+    <!--this is the outer rectangle-->
+    <svg height="1500" width="1235" xmlns="https://www.w3.org/2000/svg"><!--the xlmns is used to define the svg namespace for different attributes in this area-->
+        <!--define a filter for a drop shadow-->
+        <defs>
+            <filter id="background-shadow">
+                <feDropShadow dx="3" dy="1.5" stdDeviation="1" flood-color="black">
+            </filter>
+        </defs>
+        <!--this is for the first square with sunflower picture-->
+        <rect height="402" width="400" x="50" y="35" rx="40" ry="40" stroke="#B1D3D1" stroke-width="50" fill="#CAE9E9" filter="url(#background-shadow)"/>
+        <image href="./origami photos/sunflower.jpg" height="300" width="442" x="30" y="90" rx="12" ry="12" filter="url(#background-shadow)"/>
+        <text id="svg-header" x="500" y="150">
+            Exploring Origami
+        </text>
+        <foreignObject height="380" width="1300" x="500" y="180">
+            <p id="paragraph">
+                An innovative way to the art of paper folding.<br>Welcome to the website where it all started<br>with
+                a piece of paper! 
+            </p>
+        </foreignObject>
+        <!--this is for the second square with my biography picture-->
+        <rect height="415" width="420" x="755" y="490" rx="40" ry="40" stroke="#B1D3D1" stroke-width="50" fill="#CAE9E9" filter="url(#background-shadow)"/>
+        <image href="./origami photos/bio_photo.jpg" height="300" width="442" x="745" y="540" filter="url(#background-shadow)"/>
+        <text id="svg-header" x="170" y="560">
+            About Me
+        </text>
+        <!--add in the biography using foreignobject if possible-->
+        <foreignObject height="380" width="1300" x="38" y="580" xmlns="https://www.w3.org/2000/svg">
+            <p id="paragraph">
+                Hi there! My name is Nadia Uddin and<br>I am the creator and designer of all<br>the sculptures and this website.
+                <br>Follow me on LinkedIn to know more<br>about my qualifications.But also don't<br>forget to explore this website!
+            </p>
+        </foreignObject>
+        <foreignObject  height="380" width="1300" x="230" y="820" xmlns="https://www.w3.org/2000/svg">
+            <a href="https://www.linkedin.com/in/nadiauddin86/">
+                <img src="./origami photos/linkedin-logo.png" height="70" width="70">
+            </a>
+        </foreignObject>
+        <!--this is for the third square with the purpose picture-->
+        <rect height="420" width="425" x="50" y="985" rx="40" ry="40" stroke="#B1D3D1" stroke-width="50" fill="#CAE9E9" filter="url(#background-shadow)"/>
+        <image href="./origami photos/all sculptures.jpg" height="300" width="485" x="30" y="1045" filter="url(#background-shadow)"/>
+        <text id="svg-header" x="700" y="1020">
+            Purpose and Story
+        </text>
+        <foreignObject height="380" width="1235" x="530" y="1050" xmlns="https://www.w3.org/2000/svg">
+            <p id="paragraph1">
+                The purpose of this website is to showcase<br>my origami sculptures and present the world<br>
+                with a unique way of using paper.Some of the<br>sculptures you will see here include a variety<br>of 
+                different origami models from the internet.<br>This all started from my personal project<br> in the IB program, 
+                where I would take<br>models from the internet and multiply it<br>to make it a full on sculpture.
+
+            </p>
+        </foreignObject>
+    </svg>
+</div>
+<!--this is for the buttons of the tutorials-->
+<div class="homepage-tutorial-background">
+    <svg height="380" width="1300" xmlns="https://www.w3.org/2000/svg">
+        <text id="svg-header" x="550" y="75">
+            Tutorials
+        </text>
+        <text id="paragraph2" x="80" y="125">
+            Take a look at some tutorials and resources if you want to create these yourself! (Coming Soon)
+        </text>
+        <!--kusudama lantern-->
+        <foreignObject height="380" width="1300" x="150" y="150" xmlns="https://www.w3.org/2000/svg">
+            <a href="./kusudama_page">
+                <button class="tutorial-buttons" id="kusudama">
+                    Kusudama Lantern
+                </button>
+            </a>
+        </foreignObject>
+        <!--spirit bomb-->
+        <foreignObject height="380" width="1300" x="350" y="150" xmlns="https://www.w3.org/2000/svg">
+            <button class="tutorial-buttons" id="spirit-bomb">
+                Spirit Bomb Swirl
+            </button>
+        </foreignObject>
+        <!--sunflower canvas-->
+        <foreignObject height="380" width="1300" x="550" y="150" xmlns="https://www.w3.org/2000/svg">
+            <a href="./sunflower_canvas.html">
+                <button class="tutorial-buttons" id="sunflower">
+                    Sunflower Canvas 
+                </button>
+            </a>
+        </foreignObject>
+        <!--swan lake-->
+        <foreignObject height="380" width="1300" x="750" y="150" xmlns="https://www.w3.org/2000/svg">
+            <a href="./swan_lake.html">
+                <button class="tutorial-buttons" id="swan">
+                    Swan Lake 
+                </button>
+            </a>
+        </foreignObject>
+        <!--spike star lantern-->
+        <foreignObject height="380" width="1300" x="950" y="150" xmlns="https://www.w3.org/2000/svg">
+            <button class="tutorial-buttons" id="spike-star">
+                Spike Star Lantern
+            </button>
+        </foreignObject>
+        <!--black and white vase-->
+        <foreignObject height="380" width="1300" x="440" y="240" xmlns="https://www.w3.org/2000/svg">
+            <button class="tutorial-buttons" id="black vase">
+                Black and White Vase
+            </button>
+        </foreignObject>
+        <!--pinwheel extravaganza-->
+        <foreignObject height="380" width="1300" x="645" y="240" xmlns="https://www.w3.org/2000/svg">
+            <button class="tutorial-buttons" id="pinwheel">
+                Pinwheel Extravaganza
+            </button>
+        </foreignObject>
+    </svg>
+</div>
+</html>
